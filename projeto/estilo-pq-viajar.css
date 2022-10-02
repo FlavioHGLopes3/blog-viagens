@@ -127,7 +127,7 @@ footer {
         font-size: 1.2rem;
     }
 
-    main p, footer p {
+    .container {
         font-size: 1.2rem;
         line-height: inherit;
     }
