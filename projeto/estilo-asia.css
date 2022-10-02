@@ -1,0 +1,162 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 2rem;
+    font-family: 'Vollkorn', Georgia, Times, serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.5rem;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+.background-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to right, #16697A, #1d93ab);
+}
+
+.logo-png {
+    margin-left: 30px;
+    box-shadow: none;
+}
+
+#titulo-principal {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.links a {
+    padding: 10px;
+    color: white;
+    transition: .1s ease-in-out;
+}
+
+.links a:hover {
+    background-color: #125461;
+    border-radius: 3px; 
+    text-decoration: underline;  
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 3px;
+    box-shadow: 1px 0 8px 0px rgba(0, 0, 0, 0.36);
+}
+
+.destinos {
+    display: grid;
+    grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr) minmax(min-content, 1fr);
+    grid-template-areas:
+        "india   sri-lanka   indonesia"
+    ;
+    max-width: 950px;
+    margin: 30px auto;
+    padding: 30px;
+    column-gap: 30px;
+    align-items: end;
+}
+
+.india {
+    grid-area: india;
+}
+
+.sri-lanka {
+    grid-area: sri-lanka;
+}
+
+.indonesia {
+    grid-area: indonesia;
+}
+
+h2 {
+    text-align: center;
+}
+
+section p {
+    line-height: 170%;
+}
+
+
+footer {
+    margin-top: 50px;
+    padding: 5px;
+    text-align: center;
+    background-image: linear-gradient(to right, #16697A, #1d93ab);
+    color: white;
+}
+
+@media only screen and (min-width: 0) and (max-width: 375px) {
+
+    body {
+        font-size: 1.1rem;
+    }
+
+    .logo-png {
+        width: 40px;
+    }
+
+    ul a {
+        font-size: 1.2rem;
+    }
+
+    main p {
+        font-size: 1.2rem;
+        line-height: inherit;
+    }
+
+    #titulo-principal {
+        font-size: 1.8rem;
+    }
+
+}
+
+@media only screen and (min-width: 375px) and (max-width: 670px) {
+    #titulo-principal {
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (min-width: 670px) {
+    .logo-png {
+        width: 80px;
+    }
+
+    #titulo-principal {
+        font-size: 3.5rem;
+    }
+}
+
+/* estrutura do grid */
+
+@media (max-width: 790px) {
+    .destinos {
+        grid-template-areas:
+            "india      india       india"
+            "sri-lanka  sri-lanka   sri-lanka"
+            "indonesia  indonesia   indonesia"
+        ;
+    }
+}

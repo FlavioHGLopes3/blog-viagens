@@ -1,0 +1,158 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 2rem;
+    font-family: 'Vollkorn', Georgia, Times, serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.links a{
+    padding: 10px;
+    color: white;
+    transition: .1s ease-in-out;
+}
+
+.links a:hover {
+    background-color: #125461;
+    border-radius: 3px;
+    text-decoration: underline; 
+}
+
+header {
+    margin-bottom: 100px; 
+}
+
+.background-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to right, #16697A, #1d93ab);
+}
+
+.logo-png {
+    margin-left: 30px;
+    box-shadow: none;
+}
+
+#titulo-principal{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.links a{
+    padding: 10px;
+    color: white;
+}
+
+.links a:hover {
+    transition: .1s ease-in-out;
+    background-color: #125461;
+    border-radius: 3px;   
+    text-decoration: underline;
+}
+
+#sobre {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+    #sobre {
+        flex-direction: column;
+    }
+
+    .flavio {
+        margin-top: 50px;
+    }
+}
+
+.lucas {
+    margin-right: 60px;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 5px;
+    text-align: center;
+    background-image: linear-gradient(to right, #16697A, #1d93ab);
+    color: white;
+    font-size: 2rem;
+}
+
+.icone-contato{
+    width: 30px;
+    height: 30px;
+}
+
+@media only screen and (min-width: 0) and (max-width: 375px) {
+
+    body {
+        font-size: 1.1rem;
+    }
+
+    .logo-png {
+        width: 40px;
+    }
+
+    ul a {
+        font-size: 1.2rem;
+    }
+
+    main p {
+        font-size: 1.2rem;
+        line-height: inherit;
+    }
+
+    #titulo-principal {
+        font-size: 1.8rem;
+    }
+
+    .icone-social {
+        width: 30px;
+    }
+
+}
+
+@media only screen and (min-width: 375px) and (max-width: 670px){
+    #titulo-principal {
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (min-width: 670px) {
+    .logo-png {
+        width: 80px;
+    }
+
+    #titulo-principal {
+        font-size: 3.5rem;
+    }
+
+    .icone-social {
+        width: 30px;
+    }
+}

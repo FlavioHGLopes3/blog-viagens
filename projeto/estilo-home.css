@@ -1,0 +1,164 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 2rem;
+    font-family: 'Vollkorn', Georgia, Times, serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.5rem;
+}
+
+header {
+    margin-bottom: 100px; 
+}
+
+.background-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to right, #16697A, #1d93ab);
+}
+
+.logo-png {
+    margin-left: 30px;
+    box-shadow: none;
+}
+
+#titulo-principal{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+a:hover {  /* serve para as fotos */
+    background-color: #125461;
+    border-radius: 3px;
+    text-decoration: underline;
+}
+
+.links a{
+    padding: 10px;
+    color: white;
+    transition: .1s ease-in-out;
+}
+
+.links a:hover {
+    background-color: #125461;
+    border-radius: 3px;   
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 3px;
+    box-shadow: 1px 0 8px 0px rgba(0, 0, 0, 0.36);
+}
+
+.continentes img{
+    width: 100px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr);
+    grid-template-areas: 
+    "foto-europa    resumo-europa"
+    "resumo-asia    foto-asia"
+    "foto-america   resumo-america"
+    ;
+    gap: 50px 20px;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+main p {
+    line-height: 200%;
+}
+
+.foto-europa {
+    grid-area: foto-europa;
+}
+
+.resumo-europa {
+    grid-area: resumo-europa;
+}
+
+.foto-asia {
+    grid-area: foto-asia;
+}
+
+.resumo-asia {
+    grid-area: resumo-asia;
+}
+
+.foto-america {
+    grid-area: foto-america;
+}
+
+.resumo-america {
+    grid-area: resumo-america;
+}
+
+.alinhar { /* alinhar os itens resumos */
+    align-self: center;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 5px;
+    text-align: center;
+    background-image: linear-gradient(to right, #16697A, #1d93ab);
+    color: white;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+
+    body {
+        font-size: 1.1rem;
+    }
+
+    .logo-png {
+        width: 40px;
+    }
+
+    ul a {
+        font-size: 1.2rem;
+    }
+
+    main p {
+        font-size: 1.2rem;
+        line-height: inherit;
+    }
+
+}
+
+@media only screen and (min-width: 375px) and (max-width: 660px) {
+    main p {
+        font-size: 1.25rem;
+    }
+
+    ul a {
+        font-size: 1.25rem;
+    }
+
+    .logo-png {
+        width: 80px;
+    }
+}
